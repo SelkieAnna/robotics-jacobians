@@ -52,7 +52,6 @@ J4 = [cross(Y3,O6-O3);Y3];
 J5 = [cross(X4,O6-O4);X4];
 J6 = [cross(Y5,O6-O5);Y5];
 
-% Jsc = [J1, J2, J3, J4, J5, J6];
 Jsc = [simplify(J1), simplify(J2), simplify(J3), simplify(J4), simplify(J5), simplify(J6)];
 
 disp('Jacobian obtained by Scew theory');
@@ -86,7 +85,6 @@ Td =  Rz(q1)*Tz(d1)*Ty(d2)* Rx(q2)*Tz(d3)* Rx(q3)*Tz(d4)*Ty(d5)* Ry(q4)* Rx(q5)*
 Td = simplify(Td);
 J6 = Jcol(Td);
 
-% Jnum = [J1, J2, J3, J4, J5, J6];
 Jnum = [simplify(J1), simplify(J2), simplify(J3), simplify(J4), simplify(J5), simplify(J6)];
 
 disp('Jacobian obtained by Numerical method');
